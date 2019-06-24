@@ -14,6 +14,6 @@ class TestPushoverClient(unittest.TestCase):
         assert (self.TEST_USER != "") and (self.APP_KEY !="")
         self.client = PushoverClient(self.APP_KEY)
     def test_MessagePlain(self):
-        assert(self.client.sendMessage(self.TEST_USER, self.MESSAGE) is True)
+        assert(self.client.send_message(self.TEST_USER, self.MESSAGE) is True)
 if __name__ == "__main__":
     unittest.main()
