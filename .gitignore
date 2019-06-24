@@ -1,3 +1,6 @@
-ZabbixPushOverVENV
 .vscode
 *.env
+venv
+*.log
+app.py
+__pycache__

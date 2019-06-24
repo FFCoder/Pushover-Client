@@ -29,6 +29,10 @@ class TestPushoverClient(unittest.TestCase):
         assert(self.client.send_message(self.TEST_USER, self.MESSAGE, 
                                         priority = PushoverPriority.QUIET) is True)  
 
+    def test_NORMAL_Message(self):
+        assert(self.client.send_message(self.TEST_USER, self.MESSAGE, 
+                                        priority = PushoverPriority.NORMAL) is True)  
+
     def test_HIGH_Message(self):
         assert(self.client.send_message(self.TEST_USER, self.MESSAGE, 
                                         priority = PushoverPriority.HIGH) is True)
